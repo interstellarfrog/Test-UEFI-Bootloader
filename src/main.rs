@@ -19,8 +19,6 @@ fn panic(_panic_info: &PanicInfo) -> ! {
     loop {}
 }
 
-static KERNEL: &[u8] = include_bytes!("../../interstellar_os/target/x86_64-interstellar_os/release/interstellar_os.d");
-
 
 #[entry]
 fn efi_main(
