@@ -1,0 +1,10 @@
+[package]
+name = "uefi_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+uefi = {version = "0.10.0", features = ["alloc"] }
+xmas-elf = "0.9.0"
+[workspace]
+members = ["disk_image"]
